@@ -66,7 +66,9 @@ var swiper2 = new Swiper(".special-sale", {
   loop: true,
   autoplay: true,
   slidesPerView: 6,
-  spaceBetween: 29,
+  centeredSlides: true,
+  spaceBetween: 30,
+  grabCursor: true,
   breakpoints: {
     400: {
       slidesPerView: 2
