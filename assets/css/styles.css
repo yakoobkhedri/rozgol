@@ -412,6 +412,9 @@ img[alt="Continue"] {
 }
 
 /* single product page */
+.fancybox-shadow:hover{
+    box-shadow: 0 0 10px 2px lightgray;
+}
 img[alt="small-img"] {
     width: 70px;
     height: 70px;
