@@ -61,15 +61,11 @@ var swiper = new Swiper(".banner", {
   loop: true,
   autoplay: true,
   slidesPerView: 1,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
 });
 var swiper2 = new Swiper(".special-sale", {
   loop: true,
   autoplay: true,
-  slidesPerView: 5,
+  slidesPerView: 6,
   spaceBetween: 29,
   breakpoints: {
     400: {
