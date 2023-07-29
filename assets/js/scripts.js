@@ -191,19 +191,6 @@ let notifTabsContent = Array.from(document.querySelectorAll('.notifTabsContent >
 let suggest=Array.from(document.querySelectorAll('.suggest > div'));
 
 
-  AccountDetails.addEventListener('click', function () {
-    profileMenu.forEach((tabs) => { tabs.classList.remove('active') });
-    let tabId = AccountDetails.dataset.id;
-    profileMenuContent.forEach((content) => {
-      let contentId = content.dataset.id;
-      if (tabId === contentId) {
-        content.style.display = 'block';
-      } else {
-        content.style.display = 'none';
-      }
-    })
-  });
-
 profileMenu.forEach((tab) => {
   tab.addEventListener('click', function () {
     profileMenu.forEach((tabs) => { tabs.classList.remove('active') });
@@ -219,6 +206,19 @@ profileMenu.forEach((tab) => {
     })
   })
 });
+
+  AccountDetails.addEventListener('click', function () {
+    profileMenu.forEach((tabs) => { tabs.classList.remove('active') });
+    let tabId = AccountDetails.dataset.id;
+    profileMenuContent.forEach((content) => {
+      let contentId = content.dataset.id;
+      if (tabId === contentId) {
+        content.style.display = 'block';
+      } else {
+        content.style.display = 'none';
+      }
+    })
+  });
 
 orderTab.forEach((tab) => {
   tab.addEventListener('click', function () {
